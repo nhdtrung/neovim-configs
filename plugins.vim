@@ -12,6 +12,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
+
+"------ Language pack, hỗ trợ hight syntax, indent ------"
 Plug 'sheerun/vim-polyglot'
 Plug 'Raimondi/delimitMate'
 Plug 'jiangmiao/auto-pairs'
@@ -20,4 +22,9 @@ Plug 'rking/ag.vim'
 Plug 'wellle/targets.vim'
 Plug 'sainnhe/gruvbox-material'
 Plug 'vim-vdebug/vdebug'
+
 Plug 'burnettk/vim-angular'
+"------ Icon cho nerdTree ------"
+Plug 'ryanoasis/vim-devicons'
+"------ Color cho status ------"
+Plug 'itchyny/lightline.vim'
