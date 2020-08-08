@@ -11,6 +11,7 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+"------ Language pack, hỗ trợ hight syntax, indent ------"
 Plug 'sheerun/vim-polyglot'
 Plug 'Raimondi/delimitMate'
 Plug 'jiangmiao/auto-pairs'
@@ -19,5 +20,9 @@ Plug 'rking/ag.vim'
 Plug 'wellle/targets.vim'
 Plug 'sainnhe/gruvbox-material'
 Plug 'vim-vdebug/vdebug'
+"------ Icon cho nerdTree ------"
 Plug 'ryanoasis/vim-devicons'
+"------ Color cho status ------"
+Plug 'itchyny/lightline.vim'
 
+Plug 'itchyny/lightline.vim'
