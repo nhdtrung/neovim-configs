@@ -19,3 +19,5 @@ Plug 'rking/ag.vim'
 Plug 'wellle/targets.vim'
 Plug 'sainnhe/gruvbox-material'
 Plug 'vim-vdebug/vdebug'
+Plug 'ryanoasis/vim-devicons'
+
