@@ -36,12 +36,15 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'vim-vdebug/vdebug'
 
 "------ Language pack, hỗ trợ hight syntax, indent ------"
+
 Plug 'sheerun/vim-polyglot'
 
 "------ Icon cho nerdTree ------"
+
 Plug 'ryanoasis/vim-devicons'
 
 "------ Color cho status ------"
+
 Plug 'itchyny/lightline.vim'
 
 Kitty configuration:
