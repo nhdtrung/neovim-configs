@@ -101,7 +101,8 @@ File navigator
 - nmap <silent> ,t :GFiles<CR>
 - nmap <silent> ,r :FZF<CR>
 
-Install Nerd Font to use plugin vim-devicons.
+### Install Nerd Font to use plugin vim-devicons.
+
 1.) Download a [Nerd Font](http://nerdfonts.com/)
 
 2.) Unzip and copy to `~/.fonts`
