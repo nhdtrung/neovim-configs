@@ -38,6 +38,8 @@ T-muxnavigation:
 | `ctrl-l` | Right |
 | `ctrl-\` | Previous split |
 
+General keys:
+
 
 | KEY | ACTION |
 | ------ | ------ |
@@ -89,7 +91,7 @@ T-muxnavigation:
 - coc-prettier
 
 ### Kitty configuration:
-- Download URL: https://sw.kovidgoyal.net/kitty/index.html
+- Download [Kitty](https://sw.kovidgoyal.net/kitty/index.html)
 - Command: `cp ~/.config/nvim/kitty/kitty.conf ~/.config/kitty/`
 
 ### Mapping
