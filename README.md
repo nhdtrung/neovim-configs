@@ -1,5 +1,4 @@
-<Del># Neovim
-Neovim Configuration for web development.
+Neovim Configuration for OSX/Ubuntu (window haven't tested yet.)
 
 # Installation
 1. Follow this link to install vim-plug: https://github.com/junegunn/vim-plug
