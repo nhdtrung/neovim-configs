@@ -5,5 +5,5 @@
 " accessible by middle fingers are available
 "
 " let g:EasyMotion_keys='asdfjkoweriop'
-" nmap ,<ESC> ,,w
-" nmap ,<S-ESC> ,,b
+" nmap ,<ESC> ,ww
+" nmap ,<S-ESC> ,bb

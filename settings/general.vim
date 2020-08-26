@@ -55,6 +55,7 @@ let g:mta_filetypes = {
       \ 'html' : 1,
       \ 'blade' : 1,
       \ 'vue' : 1,
+      \ 'ts' : 1,
       \ 'xhtml' : 1,
       \ 'xml' : 1,
       \ 'jinja' : 1,
@@ -69,3 +70,8 @@ set encoding=utf8                                                               
 xnoremap p pgvy
 let g:fzf_preview_window = ''
 autocmd Filetype vue setlocal sw=3 ts=3
+autocmd Filetype ts setlocal sw=2 ts=2
+autocmd Filetype component setlocal sw=2 ts=2
+
+let g:javascript_plugin_jsdoc = 1
+
