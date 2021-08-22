@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
 let g:netrw_dirhistcnt =7
 let g:netrw_dirhist_7='/home/trung/.config/nvim'
 let g:netrw_dirhist_6='/'
@@ -7,3 +8,8 @@ let g:netrw_dirhist_4='/home/trung'
 let g:netrw_dirhist_3='/home/trung/.config'
 let g:netrw_dirhist_2='/home/trung/.config/nvim'
 let g:netrw_dirhist_1='/home/trung'
+=======
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/travis/.config'
+let g:netrw_dirhist_1='/Users/travisosx/.config/nvim'
+>>>>>>> 869a7cd67dd56df6b0f24b864ed8944bf2128fd4

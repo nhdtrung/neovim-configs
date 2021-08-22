@@ -161,5 +161,7 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-nnoremap <silent> <space>q  :<C-u>CocDiagnostics<CR>
 nmap <esc> <esc><Plug>(coc-float-hide)
+
+"Install coc-vim plugins
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']

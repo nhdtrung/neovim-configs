@@ -11,3 +11,4 @@ for fpath in split(globpath(vimsettings, '*.vim'), '\n')
 endfor
 
 set number
+set clipboard=unnamedplus

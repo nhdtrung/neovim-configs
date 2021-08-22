@@ -7,12 +7,14 @@ Plug 'majutsushi/tagbar'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'tpope/vim-surround'
 Plug 'lifepillar/vim-solarized8'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+"------ Language pack, hỗ trợ hight syntax, indent ------"
 Plug 'sheerun/vim-polyglot'
 Plug 'Raimondi/delimitMate'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kana/vim-textobj-user'
-" Plug 'rking/ag.vim'
 Plug 'rking/ag.vim'
 Plug 'wellle/targets.vim'
 Plug 'vim-vdebug/vdebug'
@@ -23,3 +25,8 @@ Plug 'Yggdroot/indentLine'
 Plug 'jsit/toast.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'ryanoasis/vim-devicons'
+Plug 'burnettk/vim-angular'
+"------ Icon cho nerdTree ------"
+Plug 'ryanoasis/vim-devicons'
+"------ Color cho status ------"
+Plug 'itchyny/lightline.vim'
