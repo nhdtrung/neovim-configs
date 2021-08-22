@@ -1,21 +1,22 @@
 ## Neovim
 Neovim Configuration for web development, the default colorscheme is toast light with custom background/foreground color: 
-### Toast Light Colorcheme
-![image](https://user-images.githubusercontent.com/14000527/100315021-824eff00-2fea-11eb-84ef-f912e1b8f3d5.png)
 
 ### Solarized_flat8 Dark Colorcheme
 ![image](https://user-images.githubusercontent.com/14000527/100315335-0e612680-2feb-11eb-948a-d72ec456b5ad.png)
 
-Create  ~/.vimsettings.vim to change colorscheme.
-
 ## 1. Installation
 1. Prerequisite
- + NodeJS
+ + NodeJS: NodeJs > 14 + npm  [Example Ubuntu](https://computingforgeeks.com/install-node-js-14-on-ubuntu-debian-linux/) 
  + Yarn
- + Pip3
+ + Python 3 + python-pip + python-env
+ + Maybe it will help: 
+ `sudo apt install python3.8-venvcd`
+ `python3 -m chadtree deps`
+
 2. Follow this link to install vim-plug: https://github.com/junegunn/vim-plug
-3. Clone this repo into `~/.config/nvim folder`. `git clone git@github.com:ngocthienvnn/neovim-configs.git ~/.config/nvim`
-4. Open neovim , use `:PlugInstall` to install plugins
+3. Clone this repo `git clone https://github.com/awebhay/neovim-configs.git ~/.config/nvim`
+4. This is config directory for NeoVim: `~/.config/nvim`
+5. Open neovim , use `:PlugInstall` to install plugins
 ### a. Kitty configuration:
 - Download [Kitty](https://sw.kovidgoyal.net/kitty/index.html)
 - Command: `cp ~/.config/nvim/kitty/kitty.conf ~/.config/kitty/`
@@ -30,31 +31,51 @@ Open Neovim, enter those commands to install Coc plugins:
  + CocInstall coc-vetur(Vue)
  + CocInstall coc-json
  + CocInstall coc-tsserver(Javascript)
+ + CocInstall coc-angular
+ + coc-phpls
+ + coc-tsserver
+ + coc-prettier
+
 ## 2. List Plugins
-+ vim-polyglot
-+ fzf
-+ delimitMate
-+ tagbar
-+ vim-textobj-user
-+ fzf.vim
-+ coc.nvim
-+ gruvbox-material
-+ splitjoin.vim
-+ vim-solarized8
-+ tcomment_vim
-+ vim-surround
-+ auto-pairs
-+ targets.vim
-+ lastpos.vim
-+ vim-airline
-+ vim-easymotion
-+ ag.vim
-+ vdebug
-+ vim-devicons
-+ chadtree
+```
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'tomtom/tcomment_vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'easymotion/vim-easymotion'
+Plug 'majutsushi/tagbar'
+Plug 'AndrewRadev/splitjoin.vim'
+Plug 'tpope/vim-surround'
+Plug 'lifepillar/vim-solarized8'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+"------ Language pack, hỗ trợ hight syntax, indent ------"
+Plug 'sheerun/vim-polyglot'
+Plug 'Raimondi/delimitMate'
+Plug 'jiangmiao/auto-pairs'
+Plug 'kana/vim-textobj-user'
+Plug 'rking/ag.vim'
+Plug 'wellle/targets.vim'
+Plug 'vim-vdebug/vdebug'
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': ':UpdateRemotePlugins'}
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+Plug 'glepnir/oceanic-material'
+Plug 'Yggdroot/indentLine'
+Plug 'jsit/toast.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+Plug 'ryanoasis/vim-devicons'
+Plug 'burnettk/vim-angular'
+"------ Icon cho nerdTree ------"
+Plug 'ryanoasis/vim-devicons'
+"------ Color cho status ------"
+Plug 'itchyny/lightline.vim'
+```
+
+
 
 ## 3. Shortcuts
-### TComment
+0### TComment
 | KEY | ACTION |
 | ------ | ------ |
 | `gc` | comment out line in visual mode |
@@ -173,55 +194,5 @@ General keys:
 | `Ctrl-\` | Show current file in NERDTree |
 |`,#` `,"` `,'` `,]` `,)` `,}` | to surround a word in these common wrappers. the # does #{ruby interpolation}. works in visual mode (thanks @cj). Normally these are done with something like ysw#|
 
-### List Plugins
-  - Plug 'scrooloose/nerdtree'
-  - Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  - Plug 'junegunn/fzf.vim'
-  - Plug 'tomtom/tcomment_vim'
-  - Plug 'christoomey/vim-tmux-navigator'
-  - Plug 'easymotion/vim-easymotion'
-  - Plug 'majutsushi/tagbar'
-  - Plug 'AndrewRadev/splitjoin.vim'
-  - Plug 'tpope/vim-surround'
-  - Plug 'lifepillar/vim-solarized8'
-  - Plug 'vim-airline/vim-airline'
-  - Plug 'vim-airline/vim-airline-themes'
-  - Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-  - Plug 'Raimondi/delimitMate'
-  - Plug 'jiangmiao/auto-pairs'
-  - Plug 'kana/vim-textobj-user'
-  - Plug 'rking/ag.vim'
-  - Plug 'wellle/targets.vim'
-  - Plug 'sainnhe/gruvbox-material'
-  - Plug 'vim-vdebug/vdebug'
-  - Plug 'sheerun/vim-polyglot' _ Language pack, support hight syntax, indent
-  - Plug 'ryanoasis/vim-devicons' _ Icon for nerdTree
-  - Plug 'itchyny/lightline.vim' _ Color for status bar
 
-### CocInstall
-- coc-angular
-- coc-phpls
-- coc-tsserver
-- coc-prettier
-
-### Kitty configuration:
-- Download [Kitty](https://sw.kovidgoyal.net/kitty/index.html)
-- Command: `cp ~/.config/nvim/kitty/kitty.conf ~/.config/kitty/`
-
-### Mapping
-Create window splits is Ctrl-w,v and Ctrl-w,s. Remap to vv and ss
-- nnoremap <silent> vv <C-w>v
-- nnoremap <silent> ss <C-w>s
-
-File navigator
-- nmap <silent> ,t :GFiles<CR>
-- nmap <silent> ,r :FZF<CR>
-
-### Install Nerd Font to use plugin vim-devicons.
-
-1.) Download a [Nerd Font](http://nerdfonts.com/)
-
-2.) Unzip and copy to `~/.fonts`
-
-3.) Run the command `fc-cache -fv` to manually rebuild the font cache
 
