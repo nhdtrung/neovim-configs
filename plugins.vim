@@ -9,7 +9,8 @@ Plug 'tpope/vim-surround'
 Plug 'lifepillar/vim-solarized8'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "------ Language pack, hỗ trợ hight syntax, indent ------"
 Plug 'sheerun/vim-polyglot'
 Plug 'Raimondi/delimitMate'
