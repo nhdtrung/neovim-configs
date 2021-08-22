@@ -1,7 +1,5 @@
 ## Neovim
 Neovim Configuration for web development, the default colorscheme is toast light with custom background/foreground color: 
-### Toast Light Colorcheme
-![image](https://user-images.githubusercontent.com/14000527/100315021-824eff00-2fea-11eb-84ef-f912e1b8f3d5.png)
 
 ### Solarized_flat8 Dark Colorcheme
 ![image](https://user-images.githubusercontent.com/14000527/100315335-0e612680-2feb-11eb-948a-d72ec456b5ad.png)
@@ -10,9 +8,13 @@ Create  ~/.vimsettings.vim to change colorscheme.
 
 ## 1. Installation
 1. Prerequisite
- + NodeJS
+ + NodeJS: NodeJs > 14 + npm  [Example Ubuntu](https://computingforgeeks.com/install-node-js-14-on-ubuntu-debian-linux/) 
  + Yarn
- + Pip3
+ + Python 3 + python-pip + python-env
+ + Maybe it will help: 
+ `sudo apt install python3.8-venvcd`
+ `python3 -m chadtree deps`
+
 2. Follow this link to install vim-plug: https://github.com/junegunn/vim-plug
 3. Clone this repo into `~/.config/nvim folder`. `git clone git@github.com:ngocthienvnn/neovim-configs.git ~/.config/nvim`
 4. Open neovim , use `:PlugInstall` to install plugins
@@ -54,7 +56,7 @@ Open Neovim, enter those commands to install Coc plugins:
 + chadtree
 
 ## 3. Shortcuts
-### TComment
+0### TComment
 | KEY | ACTION |
 | ------ | ------ |
 | `gc` | comment out line in visual mode |
