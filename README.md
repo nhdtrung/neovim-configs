@@ -193,6 +193,6 @@ General keys:
 | `,b` | CtrlP buffer selector - great for jumping to a file you already have open |
 | `Ctrl-\` | Show current file in NERDTree |
 |`,#` `,"` `,'` `,]` `,)` `,}` | to surround a word in these common wrappers. the # does #{ruby interpolation}. works in visual mode (thanks @cj). Normally these are done with something like ysw#|
-
-
+| `shilf + *` | higlt light current word => coc-config |
+| `space + o` | search method in currents file |
 
