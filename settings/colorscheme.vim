@@ -1,24 +1,29 @@
 set termguicolors
+" set background=light
+" colorscheme toast
 set background=dark
 colorscheme solarized8_flat
 
 if !empty(expand(glob('~/.vimsettings.vim')))
 	source ~/.vimsettings.vim
 else
-	set background=dark
-	colorscheme solarized8_flat
+	" set background=dark
+	" colorscheme solarized8_flat
+	set background=light
+	colorscheme toast
 endif
 
-if (get(g:, 'colors_name') == 'solarized8_flat' && &background == "dark")
-	source ~/.config/nvim/settings/colorscheme_enhance/solarized8.vim 
-endif
-" Toast Light Theme
-if (get(g:, 'colors_name') == 'toast' && &background == "light")
-	source ~/.config/nvim/settings/colorscheme_enhance/toast.vim 
-endif
+" if (get(g:, 'colors_name') == 'solarized8_flat' && &background == "dark")
+" 	source ~/.config/nvim/settings/colorscheme_enhance/solarized8.vim 
+" endif
+" " Toast Light Theme
+" if (get(g:, 'colors_name') == 'toast' && &background == "light")
+" 	source ~/.config/nvim/settings/colorscheme_enhance/toast.vim 
+" endif
+"
+" " Dark oceanic material dark theme setting
+" if (get(g:, 'colors_name') == 'oceanic_material')
+" 	source ~/.config/nvim/settings/colorscheme_enhance/oceanic_material.vim 
+" endif
 
-" Dark oceanic material dark theme setting
-if (get(g:, 'colors_name') == 'oceanic_material')
-	source ~/.config/nvim/settings/colorscheme_enhance/oceanic_material.vim 
-endif
-
+source ~/.config/nvim/settings/colorscheme_enhance/solarized8.vim 
