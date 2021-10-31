@@ -101,42 +101,49 @@ Move between kitty split windows
 | `,r` | Files |
 |`Ag pattern`| Search by Ag - required Ag installed  |
 |`Rg pattern`| Search by Rg - required Rg installed  |
-### Coc-Explorer 
 
-| functions              | usage                                                                                                | default key                  |
-| ---------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------- |
-| toggle chadtree        | Open/Closed Chadtree                                                                                 | `Ctr+\`
-| quit                   | close chad window                                                                                    | `q`                          |
-| refresh                | trigger refresh                                                                                      | `<c-r>`                      |
-| change_focus           | re-center root at folder                                                                             | `c`                          |
-| change_focus_up        | re-center root at root's parent                                                                      | `C`                          |
-| refocus                | refocus root at vim cwd                                                                              | `~`                          |
-| jump_to_current        | set cursor row to currently active file                                                              | `J`                          |
-| primary                | open / close folders & open file                                                                     | `<enter>`                    |
-| secondary              | open / close folders & preview file                                                                  | `<tab>`, `<doubleclick>`     |
-| tertiary               | open / close folders & open file in new tab                                                          | `<m-enter>`, `<middlemouse>` |
-| v_split                | open / close folders & open file in vertical split                                                   | `w`                          |
-| h_split                | open / close folders & open file in horizontal split                                                 | `W`                          |
-| open_sys               | open file using `open` / `xdg-open`                                                                  | `o`                          |
-| toggle_hidden          | toggle showing hidden items _(you need to set your own ignore list)_                                 | `.`                          |
-| collapse               | collapse all sub folders                                                                             | `<s-tab>`                    |
-| copy_name              | copy file path of items under cursor / visual selection / selection                                  | `y`                          |
-| filter                 | set glob filter for visible items                                                                    | `f`                          |
-| clear_filter           | clear filtering                                                                                      | `F`                          |
-| select                 | select item under cursor / visual selection                                                          | `s`                          |
-| clear_select           | clear selection                                                                                      | `S`                          |
-| new                    | create new folder / file at location under cursor (name ending with os specific `/` will be folders) | `a`                            |
-| rename                 | rename file under cursor                                                                             | `r`                          |
-| delete                 | delete item under cursor / visual selection / selection                                              | `df`                         |
-| delete Forever         | delete item under cursor / visual selection / selection                                              | `dF`                         |
-| trash                  | trash item under cursor / visual selection / selection                                               | `t`                          |
-| copy                   | copy selected items to location under cursor                                                         | `p`                          |
-| cut                    | move selected items to location under cursor                                                         | `x`                          |
-| stat                   | print `ls -l` stat to status line                                                                    | `K`                          |
-| toggle_follow          | toggle follow mode on / off                                                                          |                            |
-| toggle_version_control | toggle version control on / off                                                                      |
-| bigger                 | increase chad size                                                                                   | `+`, `=`                     |
-| smaller                | decrease chad size                                                                                   | `-`, `_`                     |
+### Coc-Explorer 
+| KEY | ACTION |
+| ------ | ------ |
+    "e": "open",
+    "s": "open:split",
+    "E": "open:vsplit",
+    "t": "open:tab",
+    "<bs>": ["wait", "gotoParent"],
+    "gs": ["wait", "reveal:select"],
+    "il": "preview:labeling",
+    "ic": "preview:content",
+    "Il": "previewOnHover:toggle:labeling",
+    "Ic": "previewOnHover:toggle:content",
+    "II": "previewOnHover:disable",
+
+    "yp": "copyFilepath",
+    "yn": "copyFilename",
+    "yy": "copyFile",
+    "dd": "cutFile",
+    "p": "pasteFile",
+    "df": "delete",
+    "dF": "deleteForever",
+
+    "a": "addFile",
+    "A": "addDirectory",
+    "r": "rename",
+
+    "zh": "toggleHidden",
+    "g<dot>": "toggleHidden",
+    "R": "refresh",
+
+    "?": "help",
+    "q": "quit",
+    "<esc>": "esc",
+    "X": "systemExecute",
+    "gd": "listDrive",
+
+    "f": "search",
+    "F": "searchRecursive",
+
+    "gf": "gotoSource:file",
+    "gb": "gotoSource:buffer",
 
 ### Keyboard Shortcuts ### 
 AG search:
