@@ -9,24 +9,21 @@ Neovim Configuration for web development, the default colorscheme is toast light
  + NodeJS: NodeJs > 14 + npm  [Example Ubuntu](https://computingforgeeks.com/install-node-js-14-on-ubuntu-debian-linux/) 
  + Yarn
  + Python 3 + python-pip + python-env
- + Maybe it will help: 
+ + Maybe it will help for Ubuntu/linux:
  `sudo apt install python3.8-venvcd`
  `python3 -m chadtree deps`
 
 2. Follow this link to install vim-plug: https://github.com/junegunn/vim-plug
 3. Clone this repo `git clone https://github.com/awebhay/neovim-configs.git ~/.config/nvim`
 4. This is config directory for NeoVim: `~/.config/nvim`
-5. Open neovim , use `:PlugInstall` to install plugins
-### a. Kitty configuration:
-- Download [Kitty](https://sw.kovidgoyal.net/kitty/index.html)
-- Command: `cp ~/.config/nvim/kitty/kitty.conf ~/.config/kitty/`
-The default kitty's theme is using Solarized dark theme, changed it in kitty.conf
-### b. Install Nerd Font to use vim-devicons plugin.
+
+### Nerd Font to use vim-devicons plugin.
 Download a [Nerd Font](http://nerdfonts.com/)
 Unzip and copy to `~/.fonts`
 Run the command `fc-cache -fv` to manually rebuild the font cache
 Add:  `font_family  <font-name>` and  `bold_font <font-name>` into ~/.config/kitty/kitty.conf to apply .
-### c. Install Coc.nvim Plugins
+
+### Coc.nvim Plugins
 Open Neovim, enter those commands to install Coc plugins:
  + CocInstall coc-vetur(Vue)
  + CocInstall coc-json
@@ -35,6 +32,7 @@ Open Neovim, enter those commands to install Coc plugins:
  + coc-phpls
  + coc-tsserver
  + coc-prettier
+ + coc-explorer
 
 ## 2. List Plugins
 ```
@@ -63,8 +61,6 @@ Plug 'jsit/toast.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'ryanoasis/vim-devicons'
 Plug 'burnettk/vim-angular'
-"------ Icon cho nerdTree ------"
-Plug 'ryanoasis/vim-devicons'
 "------ Color cho status ------"
 Plug 'itchyny/lightline.vim'
 ```
@@ -72,28 +68,34 @@ Plug 'itchyny/lightline.vim'
 
 
 ## 3. Shortcuts
-0### TComment
+### TComment
 | KEY | ACTION |
 | ------ | ------ |
 | `gc` | comment out line in visual mode |
 | `gcc` | comment out line in normal mode |
 ### vim-tmux-navigator:
 Move between nvim split windows.
+
 | KEY | ACTION |
 | ------ | ------ |
 | `ctrl-h` | Left |
 | `ctrl-j` | Down |
 | `ctrl-k` | Up |
 | `ctrl-l` | Right |
+
 ### Kitty navigator
+
 Move between kitty split windows 
+
 | KEY | ACTION |
 | ------ | ------ |
 | `alt- <arrow-left>` | Left |
 | `alt- <arrow-down>` | Down |
 | `alt-<arrow-up>` | Up |
 | `alt-l <arrow-right>` | Right |
+
 ### Fzf
+
 | KEY | ACTION |
 | ------ | ------ |
 | `,t` | Git Files |
@@ -103,6 +105,7 @@ Move between kitty split windows
 |`Rg pattern`| Search by Rg - required Rg installed  |
 
 ### Coc-Explorer 
+
 | KEY | ACTION |
 | ------ | ------ |
     "e": "open",
@@ -160,7 +163,7 @@ AG search:
 | `gv` | open in vertical split silently |
 | `q` | close the quickfix window |
 
-Tcomment:
+T-comment:
 
 | KEY | ACTION |
 | ------ | ------ |
