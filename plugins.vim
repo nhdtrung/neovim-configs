@@ -11,7 +11,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"------ Language pack, hỗ trợ hight syntax, indent ------"
+"------ Language pack, support hight syntax, indent ------"
 Plug 'sheerun/vim-polyglot'
 Plug 'Raimondi/delimitMate'
 Plug 'jiangmiao/auto-pairs'
@@ -19,15 +19,11 @@ Plug 'kana/vim-textobj-user'
 Plug 'rking/ag.vim'
 Plug 'wellle/targets.vim'
 Plug 'vim-vdebug/vdebug'
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': ':UpdateRemotePlugins'}
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'glepnir/oceanic-material'
 Plug 'Yggdroot/indentLine'
 Plug 'jsit/toast.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'ryanoasis/vim-devicons'
 Plug 'burnettk/vim-angular'
-"------ Icon cho nerdTree ------"
-Plug 'ryanoasis/vim-devicons'
-"------ Color cho status ------"
+"------ Color status bar------"
 Plug 'itchyny/lightline.vim'

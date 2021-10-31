@@ -57,9 +57,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'kana/vim-textobj-user'
 Plug 'rking/ag.vim'
 Plug 'wellle/targets.vim'
-Plug 'vim-vdebug/vdebug'
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': ':UpdateRemotePlugins'}
-Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
 Plug 'glepnir/oceanic-material'
 Plug 'Yggdroot/indentLine'
 Plug 'jsit/toast.vim'
@@ -104,7 +101,7 @@ Move between kitty split windows
 | `,r` | Files |
 |`Ag pattern`| Search by Ag - required Ag installed  |
 |`Rg pattern`| Search by Rg - required Rg installed  |
-### Chadtree
+### Coc-Explorer 
 
 | functions              | usage                                                                                                | default key                  |
 | ---------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------- |
@@ -128,14 +125,15 @@ Move between kitty split windows
 | clear_filter           | clear filtering                                                                                      | `F`                          |
 | select                 | select item under cursor / visual selection                                                          | `s`                          |
 | clear_select           | clear selection                                                                                      | `S`                          |
-| new                    | create new folder / file at location under cursor (name ending with os specific `/` will be folders) | `a`                          |
+| new                    | create new folder / file at location under cursor (name ending with os specific `/` will be folders) | `a`                            |
 | rename                 | rename file under cursor                                                                             | `r`                          |
-| delete                 | delete item under cursor / visual selection / selection                                              | `d`                          |
+| delete                 | delete item under cursor / visual selection / selection                                              | `df`                         |
+| delete Forever         | delete item under cursor / visual selection / selection                                              | `dF`                         |
 | trash                  | trash item under cursor / visual selection / selection                                               | `t`                          |
 | copy                   | copy selected items to location under cursor                                                         | `p`                          |
 | cut                    | move selected items to location under cursor                                                         | `x`                          |
 | stat                   | print `ls -l` stat to status line                                                                    | `K`                          |
-| toggle_follow          | toggle follow mode on / off                                                                          |                              |
+| toggle_follow          | toggle follow mode on / off                                                                          |                            |
 | toggle_version_control | toggle version control on / off                                                                      |
 | bigger                 | increase chad size                                                                                   | `+`, `=`                     |
 | smaller                | decrease chad size                                                                                   | `-`, `_`                     |
@@ -191,7 +189,7 @@ General keys:
 | `//` | clear the search |
 | `,t` | CtrlP fuzzy file selector |
 | `,b` | CtrlP buffer selector - great for jumping to a file you already have open |
-| `Ctrl-\` | Show current file in NERDTree |
+| `Ctrl-\` | Show current file in coc-explorer|
 |`,#` `,"` `,'` `,]` `,)` `,}` | to surround a word in these common wrappers. the # does #{ruby interpolation}. works in visual mode (thanks @cj). Normally these are done with something like ysw#|
 | `shilf + *` | higlt light current word => coc-config |
 | `space + o` | search method in currents file |
