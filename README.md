@@ -14,7 +14,7 @@ Neovim Configuration for web development, the default colorscheme is toast light
  `python3 -m chadtree deps`
 
 2. Follow this link to install vim-plug: https://github.com/junegunn/vim-plug
-3. Clone this repo `git clone https://github.com/awebhay/neovim-configs.git ~/.config/nvim`
+3. Clone this repo `git clone https://github.com/nhdtrung/neovim-configs.git ~/.config/nvim`
 4. This is config directory for NeoVim: `~/.config/nvim`
 
 ### Nerd Font to use vim-devicons plugin.
