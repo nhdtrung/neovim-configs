@@ -1,5 +1,11 @@
 ## Neovim
-Neovim Configuration for web development, the default colorscheme is toast light with custom background/foreground color: 
+Neovim Configuration for web development: 
+
+✅  OSX/M1
+
+✅  Ubuntu/Linux
+
+✅  Windows
 
 ### Solarized_flat8 Dark Colorcheme
 ![image](https://user-images.githubusercontent.com/14000527/100315335-0e612680-2feb-11eb-948a-d72ec456b5ad.png)
@@ -24,17 +30,17 @@ Run the command `fc-cache -fv` to manually rebuild the font cache
 Add:  `font_family  <font-name>` and  `bold_font <font-name>` into ~/.config/kitty/kitty.conf to apply .
 
 ### Coc.nvim Plugins
-Open Neovim, enter those commands to install Coc plugins:
- + CocInstall coc-vetur(Vue)
- + CocInstall coc-json
- + CocInstall coc-tsserver(Javascript)
- + CocInstall coc-angular
+Open Neovim, enter those commands to install Coc plugins: `CocInstall `
+ + coc-vetur(Vue)
+ + coc-json
+ + coc-tsserver(Javascript)
+ + coc-angular
  + coc-phpls
  + coc-tsserver
  + coc-prettier
  + coc-explorer
 
-## 2. List Plugins
+## 2. Vim Plugins
 ```
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -48,7 +54,7 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-"------ Language pack, hỗ trợ hight syntax, indent ------"
+"------ Language pack, support hight syntax, indent ------"
 Plug 'sheerun/vim-polyglot'
 Plug 'Raimondi/delimitMate'
 Plug 'jiangmiao/auto-pairs'
@@ -61,11 +67,9 @@ Plug 'jsit/toast.vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'ryanoasis/vim-devicons'
 Plug 'burnettk/vim-angular'
-"------ Color cho status ------"
+"------ Color for status bar ------"
 Plug 'itchyny/lightline.vim'
 ```
-
-
 
 ## 3. Shortcuts
 ### TComment
@@ -73,9 +77,10 @@ Plug 'itchyny/lightline.vim'
 | ------ | ------ |
 | `gc` | comment out line in visual mode |
 | `gcc` | comment out line in normal mode |
-### vim-tmux-navigator:
-Move between nvim split windows.
 
+### vim-tmux-navigator:
+
+Move between nvim split windows.
 | KEY | ACTION |
 | ------ | ------ |
 | `ctrl-h` | Left |
@@ -83,16 +88,6 @@ Move between nvim split windows.
 | `ctrl-k` | Up |
 | `ctrl-l` | Right |
 
-### Kitty navigator
-
-Move between kitty split windows 
-
-| KEY | ACTION |
-| ------ | ------ |
-| `alt- <arrow-left>` | Left |
-| `alt- <arrow-down>` | Down |
-| `alt-<arrow-up>` | Up |
-| `alt-l <arrow-right>` | Right |
 
 ### Fzf
 
@@ -103,6 +98,13 @@ Move between kitty split windows
 | `,r` | Files |
 |`Ag pattern`| Search by Ag - required Ag installed  |
 |`Rg pattern`| Search by Rg - required Rg installed  |
+
+### easyMotion
+
+| KEY | ACTION |
+| ------ | ------ |
+| `,,w` | Find next |
+| `,,b` | Find prev |
 
 ### Coc-Explorer 
 
@@ -181,8 +183,7 @@ T-muxnavigation:
 | `ctrl-l` | Right |
 | `ctrl-\` | Previous split |
 
-General keys:
-
+Useful keys:
 
 | KEY | ACTION |
 | ------ | ------ |
@@ -201,6 +202,7 @@ General keys:
 | `,b` | CtrlP buffer selector - great for jumping to a file you already have open |
 | `Ctrl-\` | Show current file in coc-explorer|
 |`,#` `,"` `,'` `,]` `,)` `,}` | to surround a word in these common wrappers. the # does #{ruby interpolation}. works in visual mode (thanks @cj). Normally these are done with something like ysw#|
+| `%` | jump between matching parenthesis, braces, brackets, quotes, etc. |
 | `shilf + *` | higlt light current word => coc-config |
 | `space + o` | search method in currents file |
 
