@@ -4,7 +4,7 @@
 " down recognition. The home keys and the immediate keys
 " accessible by middle fingers are available
 let g:EasyMotion_keys='asdfjkoweriop'
-# find next
+" find next
 nmap ,<ESC> ,,w
-# find previous
+" find previous
 nmap ,<S-ESC> ,,b
