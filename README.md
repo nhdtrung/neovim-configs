@@ -32,7 +32,11 @@ Open Neovim, enter those commands to install Coc plugins:
  + coc-phpls
  + coc-tsserver
  + coc-prettier
- + coc-explorer
+ + coc-explorer (Director manager/Tree)
+ + coc-phpls (PHP code quality)
+ + coc-psalm (PHP code quality)
+    To install psalm, you may need to run:
+    composer require --dev vimeo/psalm
 
 ## 2. List Plugins
 ```
@@ -189,6 +193,7 @@ General keys:
 | `,.` | Go to last edit location |
 | `,z` | Move previous  buffers |
 | `,x` | Move next buffers |
+| `,w` | Trailing whitespace |
 | `H`, `M`, `L` | Move to top/middle/bottom screen |
 | `zz`, `zt`, `zb` | Current line to top/middle/bottom screne |
 | `Ctrl - u` / `Ctrl - d` | Scroll half page up/down |

@@ -1,42 +1,48 @@
 {
-   "languageserver": {
-      "intelephense": {
-         "command": "intelephense",
-         "args": ["--stdio"],
-         "filetypes": ["php"],
-         "initializationOptions": {
-            "storagePath": "/tmp/intelephense"
-         },
-         "settings": {
-            "intelephense": {
-               "diagnostics": {
-                  "undefinedTypes": false,
-                  "undefinedFunctions": false,
-                  "undefinedConstants": false,
-                  "undefinedClassConstants": false,
-                  "undefinedMethods": false,
-                  "undefinedProperties": false
-               }
-            }
-         }
-      }
-},
-  "suggest.autoTrigger": "always",
-  "suggest.noselect": false,
-  "suggest.enablePreselect": false,
-  "suggest.enablePreview": false,
-  "suggest.keepCompleteopt": false,
-  "coc.source.buffer.enable": false,
-  "coc.source.file.enable": false,
-  "coc.source.around.enable": false,
-  "suggest.maxCompleteItemCount": 10,
-  "suggest.snippetIndicator": "?",
-  "diagnostic.checkCurrentLine": true,
-  "coc.preferences.colorSupport": false,
-  "diagnostic.messageTarget": "echo",
-  "suggest.disableKind": true,
-  "suggest.floatEnable": false,
-  "coc.preferences.extensionUpdateCheck": "daily",
+	"languageserver": {
+		"intelephense": {
+			"command": "intelephense",
+			"args": ["--stdio"],
+			"filetypes": ["php"],
+			"initializationOptions": {
+				"storagePath": "/tmp/intelephense"
+			},
+			"settings": {
+				"intelephense": {
+					"diagnostics": {
+						"undefinedTypes": false,
+						"undefinedFunctions": false,
+						"undefinedConstants": false,
+						"undefinedClassConstants": false,
+						"undefinedMethods": false,
+						"undefinedProperties": false
+					}
+				}
+			}
+		},
+		"psalmls": {
+			"command": "vendor/bin/psalm-language-server",
+			"filetypes": ["php"],
+			"rootPatterns": ["psalm.xml", "psalm.xml.dist"],
+			"requireRootPattern": true
+		}
+	},
+	"suggest.autoTrigger": "always",
+	"suggest.noselect": false,
+	"suggest.enablePreselect": false,
+	"suggest.enablePreview": false,
+	"suggest.keepCompleteopt": false,
+	"coc.source.buffer.enable": false,
+	"coc.source.file.enable": false,
+	"coc.source.around.enable": false,
+	"suggest.maxCompleteItemCount": 10,
+	"suggest.snippetIndicator": "?",
+	"diagnostic.checkCurrentLine": true,
+	"coc.preferences.colorSupport": false,
+	"diagnostic.messageTarget": "echo",
+	"suggest.disableKind": true,
+	"suggest.floatEnable": false,
+	"coc.preferences.extensionUpdateCheck": "daily",
 	"javascript.suggestionActions.enabled": false,
 
 	"explorer.icon.enableNerdfont": true,
@@ -48,87 +54,87 @@
 		}
 	],
 
-  "explorer.keyMappings.global": {
-    "i": false, // cancel default mapkey
-    "<c-o>": "noop",
+	"explorer.keyMappings.global": {
+		"i": false, // cancel default mapkey
+		"<c-o>": "noop",
 
-    "*": "toggleSelection",
-    "<tab>": "actionMenu",
+		"*": "toggleSelection",
+		"<tab>": "actionMenu",
 
-    "gk": ["wait", "expandablePrev"],
-    "gj": ["wait", "expandableNext"],
+		"gk": ["wait", "expandablePrev"],
+		"gj": ["wait", "expandableNext"],
 		"h": ["wait", "collapse"],
-    "l": ["wait", "expandable?", "expand", "open"],
-    "J": ["wait", "toggleSelection", "normal:j"],
-    "K": ["wait", "toggleSelection", "normal:k"],
-    "gl": ["wait", "expand:recursive"],
-    "gh": ["wait", "collapse:recursive"],
-    "<2-LeftMouse>": [
-      "expandable?",
-      ["expanded?", "collapse", "expand"],
-      "open"
-    ],
-    /* "o": ["wait", "expanded?", "collapse", "expand", "open"], */
-    /* "<cr>": ["wait", "expandable?", "cd", "open"], */
-    "o": ["wait", "expandable?", "expand", "open"],
-    "<cr>": ["wait", "expandable?", "expand", "open"],
-    "e": "open",
-    "s": "open:split",
-    "E": "open:vsplit",
-    "t": "open:tab",
-    "<bs>": ["wait", "gotoParent"],
-    "gs": ["wait", "reveal:select"],
-    "il": "preview:labeling",
-    "ic": "preview:content",
-    "Il": "previewOnHover:toggle:labeling",
-    "Ic": "previewOnHover:toggle:content",
-    "II": "previewOnHover:disable",
+		"l": ["wait", "expandable?", "expand", "open"],
+		"J": ["wait", "toggleSelection", "normal:j"],
+		"K": ["wait", "toggleSelection", "normal:k"],
+		"gl": ["wait", "expand:recursive"],
+		"gh": ["wait", "collapse:recursive"],
+		"<2-LeftMouse>": [
+			"expandable?",
+			["expanded?", "collapse", "expand"],
+			"open"
+		],
+		/* "o": ["wait", "expanded?", "collapse", "expand", "open"], */
+		/* "<cr>": ["wait", "expandable?", "cd", "open"], */
+		"o": ["wait", "expandable?", "expand", "open"],
+		"<cr>": ["wait", "expandable?", "expand", "open"],
+		"e": "open",
+		"s": "open:split",
+		"E": "open:vsplit",
+		"t": "open:tab",
+		"<bs>": ["wait", "gotoParent"],
+		"gs": ["wait", "reveal:select"],
+		"il": "preview:labeling",
+		"ic": "preview:content",
+		"Il": "previewOnHover:toggle:labeling",
+		"Ic": "previewOnHover:toggle:content",
+		"II": "previewOnHover:disable",
 
-    "yp": "copyFilepath",
-    "yn": "copyFilename",
-    "yy": "copyFile",
-    "dd": "cutFile",
-    "p": "pasteFile",
-    "df": "delete",
-    "dF": "deleteForever",
+		"yp": "copyFilepath",
+		"yn": "copyFilename",
+		"yy": "copyFile",
+		"dd": "cutFile",
+		"p": "pasteFile",
+		"df": "delete",
+		"dF": "deleteForever",
 
-    "a": "addFile",
-    "A": "addDirectory",
-    "r": "rename",
+		"a": "addFile",
+		"A": "addDirectory",
+		"r": "rename",
 
-    "zh": "toggleHidden",
-    "g<dot>": "toggleHidden",
-    "R": "refresh",
+		"zh": "toggleHidden",
+		"g<dot>": "toggleHidden",
+		"R": "refresh",
 
-    "?": "help",
-    "q": "quit",
-    "<esc>": "esc",
-    "X": "systemExecute",
-    "gd": "listDrive",
+		"?": "help",
+		"q": "quit",
+		"<esc>": "esc",
+		"X": "systemExecute",
+		"gd": "listDrive",
 
-    "f": "search",
-    "F": "searchRecursive",
+		"f": "search",
+		"F": "searchRecursive",
 
-    "gf": "gotoSource:file",
-    "gb": "gotoSource:buffer",
+		"gf": "gotoSource:file",
+		"gb": "gotoSource:buffer",
 
-    "[[": ["wait", "sourcePrev"],
-    "]]": ["wait", "sourceNext"],
+		"[[": ["wait", "sourcePrev"],
+			"]]": ["wait", "sourceNext"],
 
-    "[i": ["wait", "indentPrev"],
-    "]i": ["wait", "indentNext"],
+			"[i": ["wait", "indentPrev"],
+				"]i": ["wait", "indentNext"],
 
-    "[m": ["wait", "markPrev:modified"],
-    "]m": ["wait", "markNext:modified"],
+				"[m": ["wait", "markPrev:modified"],
+					"]m": ["wait", "markNext:modified"],
 
-    "[d": ["wait", "markPrev:diagnosticError:diagnosticWarning"],
-    "]d": ["wait", "markNext:diagnosticError:diagnosticWarning"],
-    "[D": ["wait", "markPrev:diagnosticError"],
-    "]D": ["wait", "markNext:diagnosticError"],
+					"[d": ["wait", "markPrev:diagnosticError:diagnosticWarning"],
+						"]d": ["wait", "markNext:diagnosticError:diagnosticWarning"],
+						"[D": ["wait", "markPrev:diagnosticError"],
+							"]D": ["wait", "markNext:diagnosticError"],
 
-    "[c": ["wait", "markPrev:git"],
-    "]c": ["wait", "markNext:git"],
-    "<<": "gitStage",
-    ">>": "gitUnstage"
-  }
+							"[c": ["wait", "markPrev:git"],
+								"]c": ["wait", "markNext:git"],
+								"<<": "gitStage",
+								">>": "gitUnstage"
+	}
 }
