@@ -194,7 +194,17 @@ Folds: Using **manual**.
 | `z-f` | Create |
 | `z-c` | Close |
 | `z-o` | Open |
+| `z-O` | Open the current fold and all the folds nested inside this fold |
+| `z-C` | Close the current fold and all the folds nested inside this fold |
+| `z-A` | toggle between zO and zC |
 | `z-d` | Delete |
+| `z-n` | Open all folds |
+| `z-N` | Set all folds that they were before |
+| `z-j` | Jump to the next fold |
+| `z-E` | Eliminate all folds in the entire document |
+| `zfa{` | Eliminate all folds in the entire document |
+| `[-z` | Jump to top line of this fold |
+| `[-z` | Jump to the bottom line of this fold |
 
 Useful keys:
 
