@@ -187,6 +187,15 @@ T-muxnavigation:
 | `ctrl-l` | Right |
 | `ctrl-\` | Previous split |
 
+Folds: Using **manual**.
+
+| KEY | ACTION |
+| ------ | ------ |
+| `z-f` | Create |
+| `z-c` | Close |
+| `z-o` | Open |
+| `z-d` | Delete |
+
 Useful keys:
 
 | KEY | ACTION |
