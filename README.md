@@ -82,7 +82,7 @@ Plug 'itchyny/lightline.vim'
 | `gc` | comment out line in visual mode |
 | `gcc` | comment out line in normal mode |
 
-### vim-tmux-navigator:
+### vim-tmux-navigator
 
 Move between nvim split windows.
 | KEY | ACTION |
@@ -102,6 +102,7 @@ Move between nvim split windows.
 | `,r` | Files |
 |`Ag pattern`| Search by Ag - required Ag installed  |
 |`Rg pattern`| Search by Rg - required Rg installed  |
+
 
 ### easyMotion
 
@@ -155,6 +156,7 @@ Move between nvim split windows.
     "gb": "gotoSource:buffer",
 
 ### Keyboard Shortcuts ### 
+
 AG search:
 | KEY | ACTION |
 | ------ | ------ |
@@ -169,7 +171,7 @@ AG search:
 | `gv` | open in vertical split silently |
 | `q` | close the quickfix window |
 
-T-comment:
+### T-comment
 
 | KEY | ACTION |
 | ------ | ------ |
@@ -177,7 +179,7 @@ T-comment:
 | `gcc` | comment out line in normal mode |
 | `gcip` | comment out block |
 
-T-muxnavigation:
+### T-muxnavigation
 
 | KEY | ACTION |
 | ------ | ------ |
@@ -187,7 +189,7 @@ T-muxnavigation:
 | `ctrl-l` | Right |
 | `ctrl-\` | Previous split |
 
-Folds: Using **manual**.
+### Folds: Currently is using **manual** mode
 
 | KEY | ACTION |
 | ------ | ------ |
@@ -196,7 +198,13 @@ Folds: Using **manual**.
 | `z-o` | Open |
 | `z-d` | Delete |
 
-Useful keys:
+### Tagbar
+
+| KEY | ACTION |
+| ------ | ------ |
+| `F12` | Show the tagbar |
+
+### Useful keys
 
 | KEY | ACTION |
 | ------ | ------ |
@@ -208,7 +216,7 @@ Useful keys:
 | `zz`, `zt`, `zb` | Current line to top/middle/bottom screne |
 | `Ctrl - u` / `Ctrl - d` | Scroll half page up/down |
 | `Ctrl - b` / `Ctrl - f` | Scroll full page up/down |
-| `Ctrl - o` | Old cursor position- this is a standard mapping but very useful, so included here |
+| `Ctrl - o` | Old cursor position - this is a standard mapping but very useful, so included here |
 | `Ctril - i` | opposite of Ctrl-O (again, this is standard) |
 | File Navigation | |
 | `//` | clear the search |
@@ -219,4 +227,5 @@ Useful keys:
 | `%` | jump between matching parenthesis, braces, brackets, quotes, etc. |
 | `shilf + *` | higlt light current word => coc-config |
 | `space + o` | search method in currents file |
+| `y + i + char` | copy text inside surrounded|
 
