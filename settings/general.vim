@@ -48,3 +48,4 @@ autocmd Filetype ts setlocal sw=2 ts=2
 autocmd Filetype component setlocal sw=2 ts=2
 
 let g:javascript_plugin_jsdoc = 1
+
