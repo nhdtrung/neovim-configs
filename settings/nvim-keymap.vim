@@ -119,3 +119,6 @@ nmap <F12> :TagbarToggle<CR>
 :inoremap <C-S>     <C-O>:update<CR>
 
 :nnoremap <F2> :source $MYVIMRC<CR>
+
+" P for pasting from buffer with coc-yank
+nnoremap <silent> P :<C-u>CocList -A --normal yank<cr>
