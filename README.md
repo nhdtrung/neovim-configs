@@ -204,6 +204,12 @@ AG search:
 | ------ | ------ |
 | `F12` | Show the tagbar |
 
+### Coc-yark 
+
+| KEY | ACTION |
+| ------ | ------ |
+| `P` | Paste from buffers |
+
 ### Useful keys
 
 | KEY | ACTION |

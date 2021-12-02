@@ -39,3 +39,5 @@ Plug 'itchyny/lightline.vim'
 Plug 'jsit/toast.vim'
 
 Plug 'kana/vim-textobj-user'
+" Enhance copy, paste
+Plug 'bfredl/nvim-miniyank'
