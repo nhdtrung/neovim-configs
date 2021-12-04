@@ -41,3 +41,5 @@ Plug 'jsit/toast.vim'
 Plug 'kana/vim-textobj-user'
 " Enhance copy, paste
 Plug 'bfredl/nvim-miniyank'
+" Git tool
+Plug 'tpope/vim-fugitive'
