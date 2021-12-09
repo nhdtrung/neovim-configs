@@ -43,6 +43,7 @@ Open Neovim, enter those commands to install Coc plugins: `CocInstall `
  + coc-psalm (PHP code quality)
     To install psalm, you may need to run:
     composer require --dev vimeo/psalm
+ + coc-yank
 
 ## 2. Vim Plugins
 ```
@@ -204,7 +205,7 @@ AG search:
 | ------ | ------ |
 | `F12` | Show the tagbar |
 
-### Coc-yark 
+### Coc-yank 
 
 | KEY | ACTION |
 | ------ | ------ |
