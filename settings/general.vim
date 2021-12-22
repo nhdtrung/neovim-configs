@@ -42,7 +42,7 @@ autocmd Filetype vue setlocal sw=3 ts=3
 set title
 
 let g:mapleader=','
-let g:loaded_matchparen=1
+" let g:loaded_matchparen=1
 
 autocmd Filetype ts setlocal sw=2 ts=2
 autocmd Filetype component setlocal sw=2 ts=2

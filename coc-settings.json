@@ -136,5 +136,14 @@
 								"]c": ["wait", "markNext:git"],
 								"<<": "gitStage",
 								">>": "gitUnstage"
-	}
+	},
+
+	"coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "tsserver.formatOnType": true,
+  "coc.preferences.formatOnType": true
 }

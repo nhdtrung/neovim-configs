@@ -21,6 +21,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Make your Vim/Neovim as smart as VSCode
 " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
 " A collection of language packs for Vim
 Plug 'sheerun/vim-polyglot'
 " Auto close surroundings
@@ -41,3 +44,10 @@ Plug 'jsit/toast.vim'
 Plug 'kana/vim-textobj-user'
 " Enhance copy, paste
 Plug 'bfredl/nvim-miniyank'
+
+" ReactJs
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
