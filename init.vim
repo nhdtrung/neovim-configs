@@ -40,3 +40,12 @@ if executable(s:clip)
     augroup END
 endif
 
+" Coc will display diagnostics (errors and warnings) in a tooltip for words you cursor ove
+nnoremap <silent> K :call CocAction('doHover')<CR>
+
+" Performing code actions
+" auto missing import
+nmap <leader>do <Plug>(coc-codeaction)
+" Renaming a symbol
+nmap <leader>rn <Plug>(coc-rename)
+

@@ -138,12 +138,18 @@
 								">>": "gitUnstage"
 	},
 
+	/* Auto formatting */
 	"coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+		"css",
+		"markdown"
   ],
   "tsserver.formatOnType": true,
-  "coc.preferences.formatOnType": true
+  "coc.preferences.formatOnType": true,
+
+	/* Prettier and ESLint */
+  "eslint.autoFixOnSave": true
 }
