@@ -25,8 +25,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 " Auto close surroundings
 Plug 'jiangmiao/auto-pairs'
-" Ag search
-Plug 'rking/ag.vim'
 " Clear inside, select inside surroundings
 Plug 'wellle/targets.vim'
 " Displaying vertical lines at each indentation
@@ -37,7 +35,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'itchyny/lightline.vim'
 " Toast theme
 Plug 'jsit/toast.vim'
-
 Plug 'kana/vim-textobj-user'
-" Enhance copy, paste
 Plug 'bfredl/nvim-miniyank'
+
