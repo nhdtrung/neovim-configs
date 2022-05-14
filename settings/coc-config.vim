@@ -164,7 +164,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 nmap <esc> <esc><Plug>(coc-float-hide)
 
 "Install coc-vim plugins
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-tslint-plugin', 'coc-emmet', 'coc-yank', 'coc-prettier']
 
 " Condition for prettier and eslint
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
